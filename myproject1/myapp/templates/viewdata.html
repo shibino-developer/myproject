@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="margin: auto;margin-top: 100px;width: 50%;" class="container">
+        <h3 style="color: red;align-items: center;">Students data here</h3><br>
+        <table class="table table-striped">
+            <tr>
+                <th>Name</th>
+                <th>Place</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+
+            {% for i in Students %}
+
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.place}}</td>
+                <td>{{i.address}}</td>
+                <td>{{i.phone}}</td>
+                <td>{{i.email}}</td>
+            </tr>
+
+            {% endfor %}
+        </table>
+
+    </div>
+</body>
+</html>
